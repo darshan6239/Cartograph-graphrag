@@ -13,7 +13,6 @@ from groq import Groq
 from neo4j import GraphDatabase
 
 NL_TO_CYPHER_PROMPT = """You are an expert Neo4j Cypher query writer.
-
 Graph schema for this dataset:
 {schema}
 

@@ -13,7 +13,6 @@ import re
 import pandas as pd
 from neo4j import GraphDatabase
 
-
 def _clean_rel_name(col: str) -> str:
     rel = re.sub(r"[^A-Za-z0-9]+", "_", col).strip("_").upper()
     return f"HAS_{rel}" if rel else "HAS_VALUE"

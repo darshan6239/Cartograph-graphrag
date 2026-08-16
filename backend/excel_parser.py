@@ -34,7 +34,6 @@ class ColumnSuggestion:
     dtype: str
     sample_values: list = field(default_factory=list)
 
-
 @dataclass
 class SchemaSuggestion:
     sheet_name: str

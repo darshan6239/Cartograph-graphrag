@@ -20,11 +20,9 @@ Heuristic used per column:
 from dataclasses import dataclass, field
 import pandas as pd
 
-
 CATEGORY_UNIQUE_RATIO_MAX = 0.5
 CATEGORY_MAX_DISTINCT = 200
 ID_UNIQUE_RATIO_MIN = 0.9
-
 
 @dataclass
 class ColumnSuggestion:
